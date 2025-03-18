@@ -4,6 +4,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 60px auto;
     width: 70%;
+    max-width: 100%;
+    padding: 0 20px;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -50,10 +52,6 @@ ul.posts li {
 }
 
 .images-container {
-<<<<<<< Updated upstream
-    display: flex; /* Enables flexbox layout */
-    justify-content: space-between; /* Horizontally space images evenly */
-=======
     display: flex; 
     justify-content: space-between;
     gap: 20px;
@@ -65,7 +63,7 @@ ul.posts li {
     object-fit: cover;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     body {
         width: 90%;
@@ -93,5 +91,5 @@ ul.posts li {
         position: static;
         margin-top: 20px;
     }
->>>>>>> Stashed changes
+
 }
