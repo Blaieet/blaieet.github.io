@@ -7,33 +7,42 @@ body {
     max-width: 100%;
     padding: 0 20px;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+
+nav ul,
+footer ul {
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+
+nav ul li,
+footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
     color: #999;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 h1 {
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
 }
+
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
 }
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
@@ -42,8 +51,8 @@ footer {
     width: 100vw;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
@@ -52,7 +61,7 @@ ul.posts li {
 }
 
 .images-container {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     gap: 20px;
 }
@@ -70,11 +79,13 @@ ul.posts li {
         margin: 20px auto;
     }
 
-    nav ul, footer ul {
+    nav ul,
+    footer ul {
         text-align: center;
     }
 
-    nav ul li, footer ul li {
+    nav ul li,
+    footer ul li {
         display: block;
         margin: 10px 0;
     }
@@ -92,4 +103,46 @@ ul.posts li {
         margin-top: 20px;
     }
 
+}
+
+/* Tregura Page Styles */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 30px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tregura-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tregura-images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.placeholder-image {
+    background-color: #ddd;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    border-radius: 4px;
 }
